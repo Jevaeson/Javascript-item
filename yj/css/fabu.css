@@ -1,0 +1,116 @@
+/* 改过 */
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  font-family:'Arial';
+}
+.wrap{
+  width: 10.8rem;
+  height: 100%;
+  position: relative;
+}
+footer{
+  width: 10.8rem;
+  height: 1.45rem;
+  background-color: #000;
+  position: fixed;
+  bottom:0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+}
+footer a{
+  font-size: 0.3rem;
+  color:#fff;
+  padding: 0rem 0.2rem;
+}
+footer a .iconfont{
+  display: block;
+  font-size: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+footer a:nth-child(3) .iconfont{
+  margin-left: -0.04rem;
+}
+footer a:nth-child(3){
+  color:#b41c11;
+}
+.wrap header{
+  width: 9.71rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  border-bottom: 1px solid #000;
+  margin: 0 auto;
+  font-size: 0.5rem;
+  text-align: center;
+  color:#ce0002;
+  position: relative;
+  padding-top: 0.6rem;
+}
+.wrap header .icon-zhifeiji{
+  font-size: 0.8rem;
+  position: absolute;
+  right:0rem;
+  top:0.6rem;
+}
+.wrap textarea{
+  width: 9.71rem;
+  height: 8rem;
+  margin: 0 auto;
+  display: block;
+  border:none;
+  resize: none;
+  outline: none;
+  margin-top: 0.5rem;
+}
+.wrap .pic{
+  width: 9.71rem;
+  height: 4.8rem;
+  background-color: #e5e5e5;
+  border-radius: 0.05rem;
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom:4.2rem;
+  left:0.5rem;
+}
+.wrap .pic span{
+  font-size: 0.28rem;
+  color:#d9250e;
+}
+.wrap .pic .icon-tupian{
+  font-size: 0.8rem;
+  color:#d9250e;
+  margin-bottom: 0.1rem;
+}
+.wrap > .icon-xiangji{
+  position: absolute;
+  bottom:3.15rem;
+  left:0.5rem;
+  font-size: 0.8rem;
+  color:#d9250e;
+}
+.wrap .two{
+  height: 1.35rem;
+  width: 9.71rem;
+  display: flex;
+  font-size: 0.28rem;
+  color:#000;
+  position: absolute;
+  bottom:1.45rem;
+  left:0.5rem;
+  align-items: center;
+  border-top: 1px solid #000;
+}
+.wrap .two .biaoqian{
+  margin-left: 2.4rem;
+}
+.wrap .two i{
+  color:#d9250e;
+}

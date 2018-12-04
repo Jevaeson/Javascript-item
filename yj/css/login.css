@@ -1,0 +1,92 @@
+/* 改过 */
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  font-family:'Arial';
+}
+.wrap{
+  width: 10.8rem;
+  /* 改过 */
+  height: 100%;
+  background-image: url(../images/u13.jpg);
+  /* 改过 */
+  background-size: cover;
+  position: relative;
+}
+.wrap > a{
+  display: block;
+  position: absolute;
+  width: 0.6rem;
+  height: 0.6rem;
+  top: 0.62rem;
+  left:0.55rem;
+}
+.wrap > input{
+  width: 8.7rem;
+  position: absolute;
+  display: block;
+  top:7rem;
+  left:50%;
+  margin-left: -4.35rem;
+  border:none;
+  outline: none;
+  text-align: center;
+  background-color: rgba(0,0,0,0);
+  border-bottom: 1px solid #4e4d49;
+  border-radius: 0%;
+  padding: 0.2rem 0rem;
+  font-size: 0.28rem;
+}
+input[type='password']{
+  top:8.5rem;
+}
+.login{
+  width: 10.8rem;
+  position: absolute;
+  top:10.6rem;
+  display: flex;
+  justify-content: space-around;
+}
+.login > a{
+  display: block;
+  font-size: 0.48rem;
+  color:#4f4b4a;
+}
+.agree{
+  width: 10.8rem;
+  position: absolute;
+  bottom:2.3rem;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+}
+.agree p {
+  font-size: 0.28rem;
+  color:#807265;
+  margin-left: 0.2rem;
+}
+.agree p span{
+  color:#fcfefd;
+}
+.share{
+  width: 10.8rem;
+  height: 1.75rem;
+  position: absolute;
+  bottom:0rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.share a{
+  color:#4d4d4d;
+  font-size: 0.54rem;
+  display: flex;
+  align-items: center;
+}
+.share a i{
+  font-size: 0.84rem;
+  margin-right: 0.2rem;
+}

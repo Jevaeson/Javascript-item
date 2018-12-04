@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="./css/iconfont.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <script>
+      document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + 'px';
+  </script>
+  <title>login</title>
+</head>
+<body>
+  <div class="wrap">
+    <a href="./guide.html"></a>
+    <input type="text" placeholder="点击输入手机号/Email登录" id="phone">
+    <input type="password" placeholder="输入密码">
+    <div class="login">
+      <a href="./index.html">登录</a>
+      <a href="#">注册</a>
+    </div>
+    <div class="agree">
+      <input type="checkbox">
+      <p>登录或注册即同意艺集<span>用户服务协议</span></p>
+    </div>
+    <div class="share">
+      <a href="#">
+        <i class="iconfont icon-weibo"></i>
+        微博
+      </a>
+      <a href="#">
+        <i class="iconfont icon-weixin"></i>
+        微信
+      </a>
+      <a href="#">
+        <i class="iconfont icon-qq"></i>
+        QQ
+      </a>    
+    </div>
+  </div>
+  <script src="./js/zepto.min.js"></script>
+  <script src="./js/touch.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    // 以下是手机号的设计
+    var phoneNum = /^1[0-9]{10}$/
+    var phoneRe = /^(130|131|132|133|134|135|136|137|138|139|150|151|152|153|154|155|157|158|159|166|171|173|175|176|177|178|180|181|182|183|184|185|186|187|188|189|198|199)/
+    $('#phone').blur(function(){
+      var account = $(this).val()
+      var num = account.length
+      var result = phoneNum.test(account)
+      var result2 = phoneRe.test(account)
+      if (result === false) {
+        $(this).val('手机号输入有误，请重新输入').css('color','red')
+        $('#phone').focus(function(){
+          $(this).val('').css('color','#000')
+        })
+      }else{
+        if (result2) {
+          $('#phone').focus(function(){
+            $(this).val(account).css('color','#000')
+          })
+        }else{
+          $(this).val('手机号输入有误，请重新输入').css('color','red')
+          $('#phone').focus(function(){
+            $(this).val('').css('color','#000')
+          })
+        }
+      }
+    })
+  </script>
+</body>
+</html>
